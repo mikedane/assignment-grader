@@ -14,7 +14,7 @@ def driver():
                     if testr.path_to_test_file != "":
                     	if not testr.compiled_successfully:
                             Screen.PrintInColor.yellow(message="WARNING -> Compiler error(s) on file(s) in '" + File.remove_path_from_file_name(testr.working_directory) + "'")
-                    	if WordDocument.assemble_feedback_document_txt(testr=testr, directory_of_template=testr_configuration.working_directory + '/Feedback.docx'):
+                    	if WordDocument.assemble_feedback_document(testr=testr, directory_of_template=testr_configuration.working_directory + '/Feedback.docx'):
                             Screen.PrintInColor.green(message="SUCCESS -> successfully tested '" + File.remove_path_from_file_name(testr.working_directory) + "'\n")
                     	else:
                             Screen.PrintInColor.red(message="ERROR -> Problem creating feedback document in '" + File.remove_path_from_file_name(testr.working_directory) + "'\n")
