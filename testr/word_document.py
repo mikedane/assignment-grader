@@ -68,7 +68,7 @@ class WordDocument(object):
     def assemble_feedback_document_txt(testr, directory_of_template):
         created_feedback_document_successfully = True;
         try:
-            feedback_document = open(testr.working_directory + '/Feedback.docx',"w")
+            feedback_document = open(testr.working_directory + '/Feedback.txt',"w")
 
 
             for comment_file in testr.comment_files:
