@@ -30,9 +30,9 @@ class UserInput(object):
     def prompt_source_file_name(cls):
         Screen.reset_screen()
         source_file_name = input(
-            "Enter the name of the source file.py, which is the file.py that is being graded, and the one that will be\n"
+            "Enter the name of the source file, which is the file that is being graded, and the one that will be\n"
             "placed in the feedback word document (ex. HelloWorld.java)\n\n"
-            "Source file.py : ")
+            "Source file : ")
         return source_file_name
 
     @classmethod
@@ -40,21 +40,21 @@ class UserInput(object):
         Screen.reset_screen()
         alternate_source_file_names = input(
             "Sometimes students submit files with incorrect or inconsistant names. Here we'll account for any\n"
-            "alternate source file.py names that students may have submitted. For example if the file.py is supposed\n"
+            "alternate source file names that students may have submitted. For example if the file is supposed\n"
             "to be named 'HelloWorld.java', and a student submitted 'myHelloWorld.java' or 'HelloWorldV2.java'\n"
             "we want the script to know to check for files with those names.\n\n"
-            "Enter any alternate source file.py names in a space separated list: ex. item1 item2 item3\n\n"
-            "Alternate Source file.py Names : ")
+            "Enter any alternate source file names in a space separated list: ex. item1 item2 item3\n\n"
+            "Alternate Source file Names : ")
         return [source_file_name for source_file_name in alternate_source_file_names.split()]
 
     @classmethod
     def prompt_test_file_name(cls):
         Screen.reset_screen()
         test_file_name = input(
-            "Enter the name of the testing file.py, which is the file.py that is being used to test the source file.py.\n"
-            "In many cases a testing file.py will not be used, if this is the case leave the field blank.\n"
+            "Enter the name of the testing file, which is the file that is being used to test the source file.\n"
+            "In many cases a testing file will not be used, if this is the case leave the field blank.\n"
             "(ex. TestHelloWorld.java)\n\n"
-            "Testing file.py : ")
+            "Testing file : ")
         return test_file_name
 
     @classmethod
@@ -71,7 +71,7 @@ class UserInput(object):
     def prompt_test_input_from_cli(cls):
         Screen.reset_screen()
         get_test_input_from_cli = \
-            input("There are two different ways a java source file.py can recieve input, the input can come from command\n"
+            input("There are two different ways a java source file can recieve input, the input can come from command\n"
                   "line arguments (ex. java HelloWorld arg1 arg2) or it can come from internal prompts (think Scanner\n"
                   "class). Here we'll decide which method the script should use.\n\n"
                   "Should input be fed as command line arguments? (y/n) : ")
