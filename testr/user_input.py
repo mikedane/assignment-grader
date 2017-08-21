@@ -12,8 +12,6 @@ class UserInput(object):
                   "each one. Select one of the options below to proceed.\n\n"
                   "Testr Options:\n"
                   "1. Test an assignment submission\n"
-                  "2. Test a lab submission\n"
-                  "3. Exit Testr\n\n")
         return home_selection
 
     @classmethod
