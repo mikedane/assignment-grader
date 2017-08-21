@@ -11,7 +11,7 @@ class UserInput(object):
                   "Testr is a useful tool which can parse through a directory of assignments and test\n"
                   "each one. Select one of the options below to proceed.\n\n"
                   "Testr Options:\n"
-                  "1. Test an assignment submission\n"
+                  "1. Test an assignment submission\n")
         return home_selection
 
     @classmethod
