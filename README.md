@@ -8,7 +8,7 @@ A small python project which takes a folder full of java assignment submissions 
 
 type the following command in your terminal
 	```$ git clone https://github.com/mikedane/assignment-grader.git```
-	```$ cd testr```
+	```$ cd assignment-grader```
 This will clone a copy of the current version of the testing script and cd you into it. Note that this script is written using Python3, so you will need Python 3 installed on your computer to run it. Also this script was written to work on a mac (I haven’t written a windows version) so it will only work on mac. If you don’t have a mac, then there should be some in the library you can use. Or just write a windows version
 
 ### Using the grading script
